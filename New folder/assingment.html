@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoor Jewellers</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+
+
+            background: #080808;
+
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            height: 25px;
+        }
+
+        .container1 {
+            background-color: rgb(212, 158, 58);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .container {
+            padding: 8px;
+            max-width: 1330px;
+            width: 100%;
+            height: 500px;
+            border: 2px solid rgb(8, 8, 8);
+            box-shadow: 0 5px 10px rgba(14, 11, 11, 0.15);
+            overflow: hidden;
+        }
+
+        .image-box {
+            display: flex;
+            height: 100%;
+            width: 400%;
+            justify-content: space-between;
+        }
+
+        .image-box {
+            animation: imgBox 20s linear infinite;
+        }
+
+        @keyframes imgBox {
+            0% {
+                margin-left: 0;
+            }
+
+            100% {
+                margin-left: -300%;
+            }
+        }
+
+        .image-box:hover {
+            animation-play-state: paused;
+        }
+
+        .image-box .image {
+            width: calc(100% - 100px);
+            height: 100%;
+        }
+
+        .image-box img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        #form {}
+    </style>
+</head>
+
+<body>
+    <header style=" font-family: cursive;">
+        Free shipping | Best prices since 2022
+    </header>
+    <div class="container1">
+        <p><img src="jwe.PNG" style="height: 100px;width: 230px; padding-left: 4px; padding-top: 4px;">
+
+        </p>
+        <form id="form" style="padding-top: 5px;">
+            <input type="search" id="query" name="q" placeholder="Search your item"
+                style="width: 700px; height: 50px;  font-family: cursive;">
+            <button
+                style="width: 100px; height: 50px; background-color: black; color: white; font-family: cursive;">SEARCH</button>
+
+            <button
+                style="margin-left: 90px ;width: 100px; height: 50px; background-color: black; color: white; font-family: cursive;">LOGIN</button>
+            <button
+                style="width: 100px; height: 50px; background-color: black; color: white; font-family: cursive;">SIGN
+                UP</button><br>
+            <tr>
+                <div class="box1" style="display: flex; flex-wrap: wrap; gap: 20px; padding-top: 20px;">
+                    <p style=" font-family: cursive;"><b>Select Jewellery: </b></p>
+
+
+                    <input type="radio" id="Choice6" name="choice" value="Necklaces">
+                    <label for="Choice6" style="font-family: cursive;">Necklaces</label>
+
+                    <input type="radio" id="Choice5" name="choice" value="Bangles">
+                    <label for="Choice5" style="font-family: cursive;">Bangles</label>
+
+                    <input type="radio" id="Choice4" name="choice" value="Earings">
+                    <label for="Choice4" style="font-family: cursive;">Earings</label>
+
+                    <input type="radio" id="Choice3" name="choice" value="Bracelets">
+                    <label for="Choice3" style="font-family: cursive;">Bracelets</label>
+
+                    <input type="radio" id="Choice2" name="choice" value="Rings">
+                    <label for="Choice2" style="font-family: cursive;">Rings</label>
+                    <input type="radio" id="Choice1" name="choice" value="Pendants">
+                    <label for="Choice1" style="font-family: cursive;">Pendants</label>
+                </div>
+
+            </tr>
+
+        </form>
+    </div>
+    <div class="container">
+        <div class="image-box">
+            <div class="image">
+                <img class="img2" src="i1.avif" alt="">
+            </div>
+            <div class="image">
+                <img class="img2" src="pic2.jpg" alt="">
+            </div>
+            <div class="image">
+                <img class="img3" src="pic3.jpg" alt="">
+            </div>
+            <div class="image">
+                <img class="img4" src="pic4.jpg" alt="">
+            </div>
+            <div class="image">
+                <img class="img3" src="pic1.jpg" alt="">
+            </div>
+
+            <div class="image">
+                <img class="img3" src="image.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="box5"
+        style="display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 5px;  align-items:center; font-family: cursive;  background-color: rgb(212, 158, 58) ;height: 120px; width: 1362px;">
+        <div class="container7"
+            style="margin-left: 25px; height: 15vh;width: 50vh; background-color: rgb(212, 158, 58)">
+            <h3>OVERVIEW:</h3>
+            <p>
+            <ul>
+                <li>Jewellery Care</li>
+                <li>After Sales Service</li>
+                <li>About Us</li>
+            </ul>
+            </p>
+        </div>
+        <div class="container8" style="height: 15vh;width: 50vh; background-color: rgb(212, 158, 58)">
+            <h3>OUR POLICIES:
+            </h3>
+            <p>
+            <ul>
+                <li>Exchange Policy</li>
+                <li>Return Policy</li>
+                <li>Order & Shipping</li>
+
+            </ul>
+            </p>
+        </div>
+        <div class="container9" style="height: 15vh;width: 50vh; background-color: rgb(212, 158, 58)">
+            <h3>CONTACT US:
+            </h3>
+            <p>
+            <ul>
+                <li>0335-7786543</li>
+                <li>0213-69782104</li>
+                <li>whoria2002@gmail.com</li>
+            </ul>
+            </p>
+        </div>
+        <div class="containerx" style="height: 15vh;width: 50vh; background-color: rgb(212, 158, 58)">
+            <h3>WORKING DAYS:
+            </h3>
+            <p>
+            <ul>
+                <li>Mon-Thurs {10:00am-10:00pm}</li>
+                <li>Fri {2:00pm-10:00pm}</li>
+                <li>Sat-Sun {8:00am-12:00am}</li>
+            </ul>
+            </p>
+        </div>
+    </div>
+
+    <div class="box" style=" ">
+
+
+    </div>
+    <div>
+        <footer style="font-family: cursive; color: white; display: flex;justify-content: center;"> 2022 &copy; Hoor.pk
+            All rights reserved |
+            Privacy Policy
+        </footer>
+    </div>
+</body>
+
+</html>
